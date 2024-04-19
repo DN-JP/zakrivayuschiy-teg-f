@@ -21,8 +21,48 @@
   font-variation-settings: 'wght' 400;
   background-color: var(--background-color);
   color: var(--accent-color);
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .fill {
   fill: var(--accent-color);
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto 0;
+  padding-block-start: clamp(7.5rem, 7.148rem + 1.502vi, 8.5rem);
+  background-color: var(--background-color);
+  font-family: var(--accent-font);
+  min-inline-size: clamp(20.313rem, 13.481rem + 33.632vi, 43.75rem);
+  min-block-size: clamp(20.438rem, 14.604rem + 13.993vi, 23rem);
+  max-inline-size: 700px;
+  gap: 20px;
+  border: 2px solid var(--accent-color);
+}
+
+.header__logo {
+  font-size: clamp(3.063rem, 2.71rem + 1.502vi, 4.063rem);
+  text-decoration: none;
+}
+
+.header__discription {
+  font-size: clamp(0.875rem, 0.677rem + 0.845vi, 1.438rem);
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 14px;
+}
+
+.theme-menu__button {
+  background: none;
+  border: none;
+}
+
