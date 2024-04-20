@@ -85,4 +85,13 @@
   block-size: 14px;
 }
 
+.theme-menu__button:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
 
