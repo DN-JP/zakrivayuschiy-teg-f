@@ -1,14 +1,25 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --main-font: 'Inter';
-    --accent-font: 'PressStart2P';
-    --background-color: #fff;
-    --accent-color: #000;
+  --main-font: "Inter";
+  --accent-font: "PressStart2P";
+  --background-color: #fff;
+  --accent-color: #000;
 
-    /* Gradients */
-    --bg-img: 
-        repeating-linear-gradient(to right, var(--gradient-color-one) 0px 2px, var(--gradient-color-two) 2px 4px), 
-        repeating-linear-gradient(to bottom, var(--gradient-color-one) 0px 2px, var(--gradient-color-two) 2px 4px),
-        linear-gradient(to bottom, var(--linear-gradient-color-one), var(--linear-gradient-color-two));
+  /* Gradients */
+  --bg-img: repeating-linear-gradient(
+      to right,
+      var(--gradient-color-one) 0px 2px,
+      var(--gradient-color-two) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--gradient-color-one) 0px 2px,
+      var(--gradient-color-two) 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--linear-gradient-color-one),
+      var(--linear-gradient-color-two)
+    );
 }
