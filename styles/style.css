@@ -94,4 +94,39 @@
   outline: none;
 }
 
+.section {
+  margin-block-start: 100px;
+}
+
+.card {
+  background-color: var(--background-color);
+  font-family: var(--main-font), sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card__title {
+  padding: 4px 10px 6px;
+  font-variation-settings: 'wght' 700;
+  border: 2px solid var(--accent-color);
+  font-size: inherit;
+}
+
+.card__image {
+
+}
+
+.card__text {
+  padding: 20px 28px 25px;
+  font-variation-settings: 400;
+}
+
+.card__message {
+  padding: 2px 25px 25px;
+}
+
+.card__button {
+  inline-size: 130px;
+  block-size: 38px;
+}
 
