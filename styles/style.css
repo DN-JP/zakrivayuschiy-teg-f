@@ -99,7 +99,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 54px;
+  gap: 50px;
   margin-block-start: 100px;
   margin-inline: auto;
   min-inline-size: clamp(20.313rem, 13.481rem + 33.632vi, 43.75rem);
@@ -114,7 +114,8 @@
 }
 
 .card__title {
-  padding: 4px 10px 6px;
+  /* padding: 4px 10px 4px; */
+  padding: 2px 10px 2px;
   font-variation-settings: 'wght' 700;
   border: 2px solid var(--accent-color);
   font-size: inherit;
@@ -147,7 +148,7 @@
 }
 
 .card__text {
-  padding: 21px 26px 25px;
+  padding: 25px 26px 27px;
   font-variation-settings: 400;
 }
 
@@ -155,7 +156,7 @@
   padding: 0px 25px 25px;
 }
 
-.button {
+.button-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -164,6 +165,14 @@
 }
 
 .card__icon-button {
+  background: transparent;
+  border: none;
+}
+
+.card__like-button {
+  font-family: var(--accent-font);
+  background-color: transparent;
+  font-size: 14px;
   inline-size: 130px;
   block-size: 38px;
 }
@@ -172,9 +181,13 @@
   .card__image {
     background-image: url(../images/article-img/car-img-desktop.png);
   }
+
+  .img-label {
+    right: 25px;
+  }
 }
 
-@supports (-webkit-text-stroke: 1px #fff;) {
+@supports (-webkit-text-stroke: 1px #fff) {
   .img-label {
     -webkit-text-stroke: 1px #fff;
   }
