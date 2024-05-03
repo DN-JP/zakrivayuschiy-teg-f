@@ -5,6 +5,8 @@
   --accent-font: "PressStart2P";
   --background-color: #fff;
   --accent-color: #000;
+  --heart-fill-color: #FF0000;
+  --heart-contour-color: #000;
 
   /* Gradients */
   --bg-img: repeating-linear-gradient(
