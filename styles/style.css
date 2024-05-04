@@ -40,7 +40,7 @@
   font-family: var(--accent-font);
   min-inline-size: clamp(20.313rem, 13.481rem + 33.632vi, 43.75rem);
   min-block-size: clamp(20.438rem, 14.604rem + 13.993vi, 23rem);
-  max-inline-size: 700px;
+  max-inline-size: 696px;
   gap: 20px;
   border: 2px solid var(--accent-color);
 }
@@ -255,13 +255,28 @@
   margin-block: 52px 100px;
 }
 
-.footer__button {
+.save-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   font-family: var(--accent-font);
   border: 2px solid var(--accent-color);
-  background-color: transparent;
+  background-color: var(--background-color);
   font-size: 14px;
   inline-size: 306px;
   block-size: 84px;
+  max-inline-size: 335px;
+  cursor: pointer;
+}
+
+.floppy-img {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+  inline-size: 28px;
+  block-size: 28px;
+  
 }
 
 @media (width > 376px) {
@@ -271,6 +286,17 @@
 
   .img-label {
     right: 25px;
+  }
+
+  .save-button {
+    flex-direction: row;
+    inline-size: 335px;
+    block-size: 55px;
+  }  
+
+  .floppy-img {
+    inline-size: 21px;
+    block-size: 21px;
   }
 }
 
