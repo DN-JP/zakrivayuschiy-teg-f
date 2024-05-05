@@ -7,6 +7,8 @@
   --accent-color: #000;
   --heart-fill-color: #FF0000;
   --heart-contour-color: #000;
+  --font-wght: 400;
+  --title-wght: 700;
 
   /* Gradients */
   --bg-img: repeating-linear-gradient(

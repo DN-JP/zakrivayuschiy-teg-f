@@ -14,6 +14,8 @@
   --linear-gradient-color-two: #004306;
   --blend-color: #00cc14;
   --contour-color: #00cc14;
+  --font-wght: 465;
+  --title-wght: 785;
 }
 
 :root.theme-light {
@@ -25,6 +27,8 @@
   --linear-gradient-color-two: #1a1a1a;
   --blend-color: #fff;
   --contour-color: #000;
+  --font-wght: 400;
+  --title-wght: 700;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +41,8 @@
     --linear-gradient-color-two: #004306;
     --blend-color: #00cc14;
     --contour-color: #00cc14;
+    --font-wght: 465;
+    --title-wght: 785;
   }
 }
 
@@ -50,5 +56,7 @@
     --linear-gradient-color-two: #1a1a1a;
     --blend-color: #fff;
     --contour-color: #000;
+    --font-wght: 400;
+    --title-wght: 700;
   }
 }

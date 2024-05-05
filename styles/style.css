@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" var(--font-wght);
   background-color: var(--background-color);
   color: var(--accent-color);
   background-image: var(--bg-img);
@@ -138,7 +138,8 @@
 
 .card__title {
   padding: 4px 10px 3.5px;
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: 'wght' var(--title-wght);
+  font-weight: var(--title-wght);
   border: 2px solid var(--accent-color);
   font-size: inherit;
 }
