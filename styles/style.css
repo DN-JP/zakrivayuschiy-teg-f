@@ -324,29 +324,29 @@
 }
 
 .floppy-img {
-  fill: var(--blend-color);
-  stroke: var(--blend-color);
+  color: var(--blend-color);
   inline-size: 28px;
   block-size: 28px;
-  position: relative;
-  z-index: 2;
-  color: var(--blend-color);
   mix-blend-mode: difference;
 }
 
 .save-dialog {
   padding: 0;
+  min-inline-size: 341px;
+  border: 2px solid var(--accent-color);
 }
 
-.dialog {
+.dialog-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-inline-size: 341px;
-  max-block-size: 191px;
-  padding: 30px 42px;
+  padding: 30px;
   gap: 30px;
+}
+
+.save-dialog::backdrop {
+  background-color: rgb(0, 0, 0 / 0.75);
 }
 
 .dialog-content {
@@ -358,8 +358,10 @@
 }
 
 .floppy-dialog {
-  inline-size: 39px;
-  block-size: 39px;
+  min-inline-size: 39px;
+  max-inline-size: 40px;
+  color: var(--blend-color);
+  mix-blend-mode: difference;
 }
 
 .dialog-text {
@@ -371,11 +373,37 @@
 }
 
 .dialog-button {
+  position: relative;
   background-color: var(--background-color);
   outline: none;
   cursor: pointer;
   inline-size: 86%;
+  font-family: var(--accent-font);
+  border: 2px solid var(--accent-color);
 }
+
+.dialog-button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.dialog-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  block-size: 100%;
+  inline-size: 0px;
+  background-color: var(--accent-color);
+}
+
+.dialog-button:hover::before {
+  inline-size: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
 
 @media (width > 376px) {
   .card__image {
@@ -395,6 +423,10 @@
   .floppy-img {
     inline-size: 21px;
     block-size: 21px;
+  }
+
+  .save-dialog {
+    max-inline-size: 293px;
   }
 }
 
