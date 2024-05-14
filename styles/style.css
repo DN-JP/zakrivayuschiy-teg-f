@@ -262,7 +262,6 @@
   font-size: 0.87rem;
   cursor: pointer;
   border: 2px solid var(--accent-color);
-  font-size: 14px;
   line-height: 0.9;
   transition: box-shadow 0.3s ease;
 }
@@ -333,7 +332,6 @@
 .save-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: all 0.3s ease;
 }
 
 .floppy {
@@ -397,13 +395,11 @@
   font-family: var(--accent-font);
   appearance: none;
   text-transform: uppercase;
-
 }
 
 .dialog-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: all 0.3s ease;
 }
 
 @media (width > 376px) {
