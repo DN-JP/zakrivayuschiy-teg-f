@@ -45,7 +45,7 @@
 
 .like-icon.is-liked .core {
   fill: var(--heart-fill-color);
-  transition-delay: none;
+  transition-delay: 0.0s;
 }
 
 .like-icon.is-liked .main-body {
@@ -64,7 +64,7 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart 0.3s 0.1s ease-in alternate;
+  animation: heart 0.3s 0.1s ease-in 1 alternate;
   transform-origin: center;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s 0.3s ease-in alternate;
+  animation: sparks 0.3s 0.3s ease-in 1 alternate;
 }
 
 @keyframes heart {
